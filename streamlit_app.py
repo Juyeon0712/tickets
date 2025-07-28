@@ -300,7 +300,7 @@ else:
     st.subheader('상세 결과')
 
     for i, answer in enumerate(st.session_state.answers):
-        with st.expander(f"**문제 {i+1}**:{'✅' if answer["is_correct"] else '❌'}"): #with 다음에도 : 쓰고 아래는 들여쓰기
+        with st.expander(f"**문제 {i+1}**:{'⭕' if answer["is_correct"] else '❌'}"): #with 다음에도 : 쓰고 아래는 들여쓰기
             st.write(f'문제: {answer["question"]}')
         
              # if answer[is_correct]:
